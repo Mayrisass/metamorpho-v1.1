@@ -23,3 +23,6 @@ broadcast/
 munged/
 
 *.log
+
+# Local secrets (RPC endpoints, keys)
+.env
