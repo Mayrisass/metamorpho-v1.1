@@ -203,6 +203,10 @@ If one of the allocators starts setting the withdraw queue and/or supply queue t
 Compilation, testing and formatting done with `forge`.
 Formal verification done with `certora`.
 
+The `mainnet` RPC alias in `foundry.toml` reads `MAINNET_RPC_URL` (for example a [Chainstack](https://chainstack.com) Ethereum node endpoint).
+Copy `.env.example` to `.env`, fill it in, and Foundry loads it automatically.
+The test suite does not fork, so `forge test` needs no RPC.
+
 > [!NOTE]
 > `MetaMorphoV1_1Factory` has been deployed on Ethereum and Base with the [metadata hash](https://docs.soliditylang.org/en/latest/metadata.html) included, which appear at two places in the bytecode as it is a factory.
 
